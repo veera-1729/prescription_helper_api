@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "prescriptionhelper-be566",
+  "private_key_id": "30cd2ad29f8a8db220d421fccf687ebcdddf6850",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCYg6gThc7/z1uz\ngGZ8WQymp6J8zOidEHkJs+VCxr8g+bS8qiH7JtxD8lgh4QZqT+nR2wEVKBPbn2Bx\nFYoPqP0RooOv8lux9kwfdA464GssgEDEh6JKGmEOR7SCewludNK3hASfkk4QEAmi\nFMzuCf94qUqrv8754vTqyH3ZoG/cuzxHF9bAO38ihc6sowZhc7qBC+mA3qxrOFdQ\nAgQXrfCKi0vb52haqMY5yBiJ8s6IegZTO6i+em5qCwMlsISn0s7Djq3dr99QmwfD\nGArIdEtDTyAazXJTybOufSdKejBE0g/36DOoi9ZdwChuKGfDPfJeuhAHkc2nyRY5\nd9WvfzlhAgMBAAECggEAAITjsr/QB929wBlX9/TBYtSTnHFB2i2A/PYHWewlYMRK\nz8DUPWepJKPPthtPB1f66bGBMiBNG4ByDoZ6TiH3DQsgn73fXyZhhVKivQNwJ/JO\njiCwTihjc84NjKtkqYMlJ7XfwmeIA5zbXIlttmJzM7bfS8D7EE2MA/vPVlkaAl5B\nLkumdEWqwcMKq8fkKGH+w/UBBRqXRV+VQbI4jBMr3/uYpjbsLf/u3mihN+LayQU2\ngTVp6Iyul5JzFbAmlHrAYNQGQMSXSYWGmyTWlgbILFIsyRiwCFFr0cYWnHxrZ1Bo\nGzN7oYhL7GaL2IKyh14/3uFnaADNttsIAGMGCX7RgQKBgQDOPtvkjcELZmOiuIC+\npla2Wo/EKY/6il5FfdX+eLQ1D9t2/mMjMbqqYZjFnH1loGZFKBpBBNH6ene3u0y0\nYfhVRR7xJQ7BSmQYbyw2d5+aglAQTCRuW9+9bDhtdx5YV0nkKzSWA1qxG9r7UFvD\n64382akIHcuN+D7ZfgHjxbQZoQKBgQC9ToHPbRXIhzaw/8EWI4S1lyYGqSqLL4/3\n0ldakSr+8UmcITfJA8nkpsPxksgPUTvSeTF7RxM86kqYy+LTEHcmaYgafmvUzbEW\nApKxigG44nPt2uKJl7UDBJ2odCOpwNj1FyAec9qenIX/ErQip8/RywuuSYG2pQBA\naak/JLSHwQKBgFiPW0KHr+XiQFRF31p9+Gvy9RqpMh7FvXcfcn0DfXXvajBtSUp6\ndwnkQIJSEPJLbr6xWpyiojtozPFC5svp6YVL2d54KB7Nf6+SRSzaLtlcrV5iI56T\nqr4esxgl9wy95oeoGbt0k0PLjzsspUq6Ycy59b/7c0Vx3CLt3Yfdg9khAoGBALn9\nmRI3pdBH8JcEICvlJ6zV3PlsWS04xKUCVurXd7vVSrIH/OwVOdXZdugwgzhxYmoO\nwmvRT/hoZHQs1STzp2zpAFyvWrhQgy0RyBiAc+K3Mpk9lZcDo0dc0J1BxgwxObfL\nSbZBs0hklk4ejTcDUu5XJJnPBI9zG4UtiqhMIsbBAoGBAIrbjDk/j4q1uXVBy89c\n1N/sp6YnW4E/Txg9Iyome+X++93mFPk2n+CZWUDLJlHCbbYcC3tHatg36NTS5+TX\nlMjsAUBAJPPRb17gRXD8T3XN99uJZejdm4N3tNvU4o8LtmSmkWh5d083Y5fpD9+w\nzi8i0p42zEG3N0JY6ro3oHzZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-14kji@prescriptionhelper-be566.iam.gserviceaccount.com",
+  "client_id": "118097602106435936005",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-14kji%40prescriptionhelper-be566.iam.gserviceaccount.com"
+}
