@@ -31,7 +31,7 @@ const UserSchema = new mongoose.Schema({
     },
     no_days:{
         type:Number,
-        required:true
+        //required:true
     },
     isAdmin:{
         type: Boolean,
