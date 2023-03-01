@@ -16,6 +16,9 @@ const notificaionRoutes = require("./routes/notifications")
 // app.use(cookieParser())
 app.use(express.json());
 app.use(bodyParser.json());
+app.use("/", (req, res) => {
+  res.send("Hello from your api")
+})
 app.use("/api/users", userRoutes);
 app.use("/api/notifications", notificaionRoutes);
 const connect = async () => {
