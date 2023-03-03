@@ -1,44 +1,45 @@
-const mongoose  = require("mongoose")
+const mongoose = require("mongoose");
 
-const UserSchema = new mongoose.Schema({
-    username:{
-        type:String,
-        required: true,
-        unique: true,
+const UserSchema = new mongoose.Schema(
+  {
+    username: {
+      type: String,
+      required: true,
+      unique: true,
     },
-    phone_no:{
-        type:String,
-        required:true,
-        unique:true
+    phone_no: {
+      type: String,
+      required: true,
+      unique: true,
     },
-    email:{
-        type: String,
+    email: {
+      type: String,
     },
-    firebase_token:{
-        type:String,
-        required: true,
-        unique: true,
+    firebase_token: {
+      type: String,
+      required: true,
+      unique: true,
     },
-    medicine_timings:{
-        type:["Mixed"]
-        //["hour":{"img","qty"}]
+    medicine_timings: {
+      type: ["Mixed"],
+      //["hour":{"img","qty"}]
     },
-    status:{
-        type:Boolean
+    status: {
+      type: Boolean,
     },
-    days_left:{
-        type:Number,
+    days_left: {
+      type: Number,
     },
-    no_days:{
-        type:Number,
-        //required:true
+    no_days: {
+      type: Number,
+      //required:true
     },
-    isAdmin:{
-        type: Boolean,
-        default: false,
+    isAdmin: {
+      type: String,
+      default: "false",
     },
-    
-     
-},{timestamps: true})
+  },
+  { timestamps: true }
+);
 
-module.exports =  mongoose.model('User',UserSchema)
+module.exports = mongoose.model("User", UserSchema);
