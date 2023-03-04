@@ -18,7 +18,6 @@ const UserSchema = new mongoose.Schema(
     firebase_token: {
       type: String,
       required: true,
-      unique: true,
     },
     medicine_timings: {
       type: ["Mixed"],

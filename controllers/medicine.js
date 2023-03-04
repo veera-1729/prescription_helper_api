@@ -1,9 +1,8 @@
 const user_Collection = require("../models/user");
 const add_Medicine = async (req, res) => {
-
-    console.log("Add medicine route called")
+  console.log("Add medicine route called");
   try {
-    const userId = req.params.userId;
+    const userId = req.body.userId;
     let user = await user_Collection.findOne({ _id: userId });
     if (user == null) {
       return res.status(500).send("User dont exist in database");

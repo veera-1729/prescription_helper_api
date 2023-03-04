@@ -10,6 +10,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const userRoutes = require("./routes/user");
+const adminRoutes = require("./routes/admin")
 const notificaionRoutes = require("./routes/notifications");
 const medicineRoutes = require("./routes/medicines");
 //middlewares
@@ -20,6 +21,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 app.use("/api/users", userRoutes);
+app.use("/api/admin", adminRoutes);
 app.use("/api/medicines", medicineRoutes);
 app.use("/api/notifications", notificaionRoutes);
 // app.use("/", (req, res) => {

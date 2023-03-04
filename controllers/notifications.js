@@ -15,14 +15,14 @@ const push_notifications = async (req, res) => {
 
     // const user = await user_Collection.findOne({ _id: req.params.userId });
     const user = await user_Collection.findOne({
-      _id: "64007846d81f2716ad3a954f",
+      _id: "640189bb55b2a03155039396",
     });
 
     if (!user) {
       //return res.status(404).json({ error: "User not found" });
     }
     const name = user.username;
-    const medicines = user.medicine_timings[0]["9"];
+    const medicines = user.medicine_timings[0]["1:00 PM"];
     let message = {
       notification: {
         title: "Test Notificaion",

@@ -34,9 +34,7 @@ const register = async (req, res) => {
       ...otherDetails
     } = newuser._doc;
 
-    return res.status(201).json({
-      details: otherDetails,
-    });
+    return res.status(201).send(otherDetails);
   } catch (err) {
     console.log(err);
     return res.status(500).json({ Error: `${err}` });
@@ -58,19 +56,6 @@ const is_User_Exists = async (req, res) => {
   }
 };
 
-const addMedicine = async (req, res) => {};
 
-const register_Admin = async (req, res) => {
-  console.log("Admin register route called..");
-  try {
-    const newAdmin = await admin_Collection.create(req.body);
-    res
-      .status(201)
-      .json({ message: "Admin registered successfully", userId: newAdmin._id });
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({ message: "Error while registering admin" });
-  }
-};
 
-module.exports = { addMedicine, register, is_User_Exists, register_Admin };
+module.exports = { register, is_User_Exists };
