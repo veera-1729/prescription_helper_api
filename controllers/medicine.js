@@ -3,20 +3,18 @@ const add_Medicine = async (req, res) => {
   console.log("Add medicine route called");
   try {
     const userId = req.body.userId;
+
     let user = await user_Collection.findOne({ _id: userId });
+    console.log(user);
     if (user == null) {
       return res.status(500).send("User dont exist in database");
     }
-    let m = {};
-    m["img"] = req.body.imageUrl;
-    m["qty"] = req.body.qty;
-    let newMed = {};
-    let time = req.body.time;
-    newMed[`${time}`] = m;
-    console.log(newMed);
-
+    let m = [];
+    m.push(req.body.time);
+    m.push(req.body.qty);
+    m.push(req.body.imageUrl);
     let prev = user.medicine_timings;
-    prev.push(newMed);
+    prev.push(m);
 
     const updated = await user_Collection.findOneAndUpdate(
       { _id: userId },
