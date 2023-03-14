@@ -36,8 +36,8 @@ const connect = async () => {
   }
 };
 
-mongoose.connection.on("disconnected", () => {
-  console.log("mongoDB disconnected");
+mongoose.connection.on("disconnected", (e) => {
+  console.log("mongoDB disconnected ",e);
 });
 
 app.listen(8800, () => {

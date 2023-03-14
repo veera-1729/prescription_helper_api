@@ -15,14 +15,14 @@ const push_notifications = async (req, res) => {
 
     // const user = await user_Collection.findOne({ _id: req.params.userId });
     const user = await user_Collection.findOne({
-      _id: "640189bb55b2a03155039396",
+      _id: req.params.userId,
     });
-
+    console.log(user);
     if (!user) {
-      //return res.status(404).json({ error: "User not found" });
+      return res.status(404).json({ error: "User not found" });
     }
     const name = user.username;
-    const medicines = user.medicine_timings[0]["1:00 PM"];
+    const medicines = user.medicine_timings[0];
     let message = {
       notification: {
         title: "Test Notificaion",
@@ -30,8 +30,8 @@ const push_notifications = async (req, res) => {
       },
       data: {
         name: user.username,
-        image: medicines["img"],
-        qty: medicines["qty"].toString(),
+        image: medicines[2],
+        qty: medicines[1].toString(),
       },
       token: user.firebase_token,
     };
@@ -41,7 +41,7 @@ const push_notifications = async (req, res) => {
         // return res.status(500).send({ message: err });
       } else {
         return res.status(200).send({ message: "Notification sent" });
-        console.log("MEssage sent succesfully");
+        //console.log("MEssage sent succesfully");
       }
     });
   } catch (error) {

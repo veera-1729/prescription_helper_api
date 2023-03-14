@@ -14,7 +14,7 @@ const add_Medicine = async (req, res) => {
     m.push(req.body.qty);
     m.push(req.body.imageUrl);
     let prev = user.medicine_timings;
-    prev.push(m);
+    prev.push(m); 
 
     const updated = await user_Collection.findOneAndUpdate(
       { _id: userId },
