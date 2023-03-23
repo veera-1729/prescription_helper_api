@@ -1,7 +1,7 @@
-const express = require("express")
-const router = express.Router()
-const {push_notifications} = require("../controllers/notifications")
+const express = require("express");
+const router = express.Router();
+const { push_notifications } = require("../api/notifications");
 
-router.get("/push_notifications/:userId",push_notifications)
+router.get("/push_notifications/:userId", push_notifications);
 
-module.exports = router
+module.exports = router;

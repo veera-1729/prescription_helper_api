@@ -6,7 +6,7 @@ const {
   Add_Admin_Details,
   is_Admin_Exists,
   patientslist,
-} = require("../controllers/admin");
+} = require("../api/admin");
 
 router.post("/register", register_Admin);
 router.post("/addDetails/:adminId", Add_Admin_Details);
