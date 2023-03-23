@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const UserSchema = new mongoose.Schema(
+const adminSchema = new mongoose.Schema(
   {
     username: {
       type: String,
@@ -19,26 +19,24 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    medicine_timings: {
-      type: ["Mixed"],
-      //["hour":{"img","qty"}]
-    },
-    status: {
-      type: Boolean,
-    },
-    days_left: {
-      type: Number,
-    },
-    no_days: {
-      type: Number,
-      //required:true
-    },
-    isAdmin: {
+    hospitalName: {
       type: String,
-      default: "false",
+      //required: true,
+      default: "",
+    },
+    patients: {
+      type: ["String"],
+    },
+    location: {
+      type: String,
+      //required: true,
+      default: "",
+    },
+    gender: {
+      type: String,
     },
   },
   { timestamps: true }
 );
 
-module.exports = mongoose.model("User", UserSchema);
+module.exports = mongoose.model("Admin", adminSchema);
