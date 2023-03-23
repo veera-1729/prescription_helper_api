@@ -22,7 +22,7 @@ const push_notifications = async (req, res) => {
       return res.status(404).json({ error: "User not found" });
     }
     const name = user.username;
-    const medicines = user.medicine_timings[0];
+    const medicines = user.medicine_timings[4];
     let message = {
       notification: {
         title: "Test Notificaion",

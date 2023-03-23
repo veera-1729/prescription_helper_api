@@ -18,14 +18,22 @@ const adminSchema = new mongoose.Schema(
     firebase_token: {
       type: String,
       required: true,
-       
     },
     hospitalName: {
       type: String,
-      // required:true
+      //required: true,
+      default: "",
     },
     patients: {
       type: ["String"],
+    },
+    location: {
+      type: String,
+      //required: true,
+      default: "",
+    },
+    gender: {
+      type: String,
     },
   },
   { timestamps: true }
